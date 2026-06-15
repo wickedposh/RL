@@ -29,12 +29,11 @@ rior variance, confirming that mixed strategies prevent posterior collapse.
 
  
 
-
-## Code
-
--"MC.py" - Monte Carlo simulation
--"QLearning.py" - tabular Q-learning simulation
--"dqn.py" - DQN simulation
+  ## What's here
+  - `MC.py` — Monte Carlo simulation
+  - `QLearning.py` — tabular Q-learning
+  - `dqn.py`, `dqn_agent.py` — Deep Q-Network
+  - `eps_star_vs_beta.png` — results plot
 
 ## Reproduce
 
