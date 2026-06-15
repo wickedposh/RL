@@ -39,16 +39,12 @@ rior variance, confirming that mixed strategies prevent posterior collapse.
 
   Key result
 
-  ┌──────┬───────────┬───────┐                                                                                                    
-  │  β   │ ε* (mean) │  std  │
-  ├──────┼───────────┼───────┤                                                                                                    
-  │ 0.50 │ 0.558     │ 0.233 │
-  ├──────┼───────────┼───────┤
-  │ 0.70 │ 0.520     │ 0.247 │
-  ├──────┼───────────┼───────┤
-  │ 0.90 │ 0.252     │ 0.273 │
-  ├──────┼───────────┼───────┤                                                                                                    
-  │ 0.99 │ 0.118     │ 0.050 │
-  └──────┴───────────┴───────┘   
+  | β | ε* (mean) | std |
+  |---|---|---|
+  | 0.50 | 0.558 | 0.233 |
+  | 0.70 | 0.520 | 0.247 |
+  | 0.90 | 0.252 | 0.273 |
+  | 0.99 | 0.118 | 0.050 |
+  
 DQN reconciles the previously observed discrepancy between Monte Carlo and tabular Q-learning.
 
