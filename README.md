@@ -1,3 +1,45 @@
+
+## Project 2 — Heterogeneous Market: Does Obfuscation Survive a Rational Producer?
+
+**Paper:** *Obfuscation in a Heterogeneous Pricing Market* (working title)
+
+### Idea
+Extends the single-consumer game to N heterogeneous consumers with private WTP
+drawn from an unknown distribution F. The producer is now **strategic**: it
+follows a belief-greedy strategy, learning the acceptance curve online and
+pricing to maximise profit. A two-sided Bayesian game.
+
+### Theory
+- The producer's optimal price depends on F only through a 2-D local statistic
+  (price, effective hazard) — a sufficient-statistic / dimension-reduction result
+  (DKW consistency for large N).
+- Existence of a Bayes–Nash equilibrium via Berge's maximum theorem + Kakutani's
+  fixed-point theorem; obfuscation enters through a price-insensitive "noise floor"
+  in effective demand.
+
+### Key finding
+Obfuscation's survival depends on whether consumers are forward-looking:
+- **Static / myopic** (β = 0): equilibrium ε* ≈ 1 — obfuscation unravels to
+  truthful play against a best-responding producer.
+- **Dynamic / discounted** (β > 0): ε* < 1 — obfuscation survives, because
+  corrupting the producer's belief today lowers future prices (a discounted,
+  intertemporal benefit). ε* decreases with patience.
+
+| β | ε* (mean ± std, 10 seeds) |
+|------|------|
+| 0.00 | 0.917 ± 0.027 |
+| 0.50 | 0.875 ± 0.068 |
+| 0.90 | 0.788 ± 0.091 |
+| 0.99 | 0.790 ± 0.079 |
+
+Spearman ρ = −0.630, p < 10⁻⁴. Trend decreases then plateaus (~β ≈ 0.9):
+the obfuscation incentive saturates once consumers are sufficiently patient.
+
+### Files
+- `hetero_dynamic.py` — two-sided dynamic game (producer belief-learning + consumer DQN)
+- (static variants: `hetero_game.py`, `hetero_indiv.py`)
+
+
 ## Title : Application of RL algorithms to Game Theory
  
  
