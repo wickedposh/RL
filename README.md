@@ -55,15 +55,16 @@ Obfuscation's survival depends on whether consumers are forward-looking:
   corrupting the producer's belief today lowers future prices (a discounted
   intertemporal benefit). ε* decreases with patience.
 
-| β | ε* (mean ± std, 10 seeds) |
+| β | ε* (mean ± std, 24 seeds) |
 |------|------|
-| 0.00 | 0.917 ± 0.027 |
-| 0.50 | 0.875 ± 0.068 |
-| 0.90 | 0.788 ± 0.091 |
-| 0.99 | 0.790 ± 0.079 |
+| 0.00 | 0.914 ± 0.035 |
+| 0.50 | 0.852 ± 0.048 |
+| 0.90 | 0.740 ± 0.071 |
+| 0.99 | 0.749 ± 0.059 |
 
-Spearman ρ = −0.630, p < 10⁻⁴. The trend decreases then plateaus (β ≈ 0.9):
-the obfuscation incentive saturates once consumers are sufficiently patient.
+Spearman ρ = −0.769, p < 10⁻⁶ (96 raw (β, ε*) pairs). Reproduced across four
+independent seed sets. The trend decreases then plateaus (β ≈ 0.9): the
+obfuscation incentive saturates once consumers are sufficiently patient.
 
 ### Files
 - `hetero_dynamic.py` — two-sided dynamic game (producer belief-learning + consumer DQN)
