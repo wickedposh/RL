@@ -20,5 +20,10 @@ Strong satiation forces diversification (top arm ~23%); weak satiation lets the
 policy concentrate on the favorite (~51%). Monotonic across all 9 settings,
 error bars non-overlapping.
 
+## Scope
+This is the **reactive** version (myopic EXP3). Planned extension: compare against
+a **planful** (RL/MDP) policy — *does planning ahead about satiation beat reacting
+to it?*
+
 ## Run
 `python exp3.py`
