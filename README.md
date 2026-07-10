@@ -8,7 +8,7 @@ when it's rested.
 Sweeping the satiation-retention parameter (20 seeds each), I show it
 **monotonically controls how much the policy concentrates on the favorite**:
 
-![satiation → concentration](satiation_concentration.png)
+![satiation → concentration](RL/satiation_concentration.png)
 
 | retention (weaker satiation →) | top-arm probability |
 |---|---|
